@@ -1,0 +1,77 @@
+.checkbox-new {
+	margin-top:-11px;
+}
+
+.checkbox-new input[type="radio"], .checkbox-new  input[type="checkbox"] { position: absolute; left: -999em; }
+		
+.checkbox-new label:before { 
+		display: inline-block; position: relative; top:0.25em; left:-2px; 
+		content:''; width:25px; height:25px;
+		background-image:url(../images/checkbox.png); 
+		margin-top: 8px;
+		}
+	
+.checkbox-new  input[type="checkbox"] + label:before { background-position: 0 -25px;}
+.checkbox-new  input[type="checkbox"]:checked + label:before {background-position: 0 0 ; }
+		 
+.checkbox-new  input[type="radio"] + label:before { background-position: -25px -25px;}	 	
+.checkbox-new  input[type="radio"]:checked + label:before { background-position: -25px 0;}
+	
+		/* Remove the custom styling for IE 7-8 */
+		
+		.ie8 .checkbox-new label:before { display:none; content:none; }
+		
+		.ie8 .checkbox-new input[type="checkbox"],
+		.ie8 .checkbox-new input[type="radio"],
+		.ie7 .checkbox-new input[type="checkbox"],
+		.ie7 .checkbox-new input[type="radio"]{ 
+			position: static; left:0; }
+		
+		.ie8 .checkbox-new input[type="checkbox"],
+		.ie8 .checkbox-new input[type="radio"] { 
+			position:relative; top:5px; margin-right:0.5em;}	
+			
+.checkbox-new input[type="text"]:focus, .checkbox-new textarea:focus {
+		border-color:#000;
+		}
+		
+		
+/*------------------------------------*/
+
+
+.checkbox-new1 {
+	margin-top:-11px;
+}
+
+.checkbox-new1 input[type="radio"], .checkbox-new1  input[type="checkbox"] { position: absolute; left: -999em; }
+		
+.checkbox-new1 label:before { 
+		display: inline-block; position: relative; top:0.25em; left:-2px; 
+		content:''; width:25px; height:25px;
+		background-image:url(../images/checkbox1.png); 
+		margin-top: 8px;
+		}
+	
+.checkbox-new1  input[type="checkbox"] + label:before { background-position: 0 -25px;}
+.checkbox-new1  input[type="checkbox"]:checked + label:before {background-position: 0 0 ; }
+		 
+.checkbox-new1 input[type="radio"] + label:before { background-position: -25px -25px;}	 	
+.checkbox-new1 input[type="radio"]:checked + label:before { background-position: -25px 0;}
+	
+		/* Remove the custom styling for IE 7-8 */
+		
+		.ie8 .checkbox-new1 label:before { display:none; content:none; }
+		
+		.ie8 .checkbox-new1 input[type="checkbox"],
+		.ie8 .checkbox-new1 input[type="radio"],
+		.ie7 .checkbox-new1 input[type="checkbox"],
+		.ie7 .checkbox-new1 input[type="radio"]{ 
+			position: static; left:0; }
+		
+		.ie8 .checkbox-new1 input[type="checkbox"],
+		.ie8 .checkbox-new1 input[type="radio"] { 
+			position:relative; top:5px; margin-right:0.5em;}	
+			
+.checkbox-new1 input[type="text"]:focus, .checkbox-new1 textarea:focus {
+		border-color:#000;
+		}

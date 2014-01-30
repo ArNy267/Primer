@@ -1,0 +1,783 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>TWOPCT</title>
+    <link href="font/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <!--<link href="css/bootstrap_responsive.css" rel="stylesheet" type="text/css">-->
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/html5.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/respond.src.js"></script>
+    <script src="js/sorttable.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        
+      $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+
+      $('.dropdown-toggle').dropdown()
+      
+      $(".collapse").collapse()
+
+    </script>
+    <script type="text/x-javascript">
+    jQuery(document).ready(function ($) {
+                // Code using $ as usual goes here.
+                jQuery(".in").each(function (index) {
+                    jQuery(this).parent("div").addClass("first");
+                });
+
+            });
+    </script>
+    <link rel="stylesheet" href="css/dropkick.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!-- Aqui empieza en contenido del Header  -->
+<div class="header" id="header">  
+  <div class="container">
+    <div class="pull-left"> <a href="#"><img src="images/logo.png" alt=""/></a> </div>
+    <div class="pull-right span10">
+      <div class="pull-left span3">
+        <div class="nav"> <a href="#">Account</a> <a href="#">herramientas</a> </div>
+      </div>
+      <div class="pull-left span2">
+        <div class="set_box dropdown"> <span>
+          <figure></figure>
+          <img src="images/meber_pic.jpg" alt=""/></span> <a data-toggle="dropdown" href="#" >Santiago robledo <i class="downarrow" ></i></a>
+          <ul aria-labelledby="dLabel" role="menu" class="dropdown-menu">
+            <li class="first"><a href="#"><span><img alt="" src="images/settings_icon2.png"></span> Settings</a></li>
+            <li><a href="#"><span><img alt="" src="images/user_icon.png"></span> Profile</a></li>
+            <li class="last"><a href="#"><span><img alt="" src="images/logout_icon.png"></span> Logout</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pull-left badge-main span"> <a  href="#"><img class="fl" alt="" src="images/top-icon1.png">
+        <div class="badge fl push-upside-bage">23</div>
+        </a> <a  href="#"><img class="fl" alt="" src="images/top-icon2.png">
+        <div class="badge fl push-upside-bage">23</div>
+        </a> </div>
+      <div class=" pull-right search-query">
+        <div class="search">
+          <input type="text" class="textbox" placeholder="Search">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- Aqui empieza en contenido del centro  -->      
+<div class="row-fluid"> 
+  <div class="container pad"> 
+  <!--  divicion izquierda tipo sidebar -->
+    <div class="span3">
+      <div class="member-box">
+        <div class="thumbnails"> <img src="images/left-man-img.jpg" alt=""/> </div>
+        <div class="mebber-disc">
+          <h3>Santiago Robledo</h3>
+          <p>Conferencista Social media, 
+            Empresario, Blogger</p>
+          <span class="fivstar"><img src="images/star.jpg" alt=""/></span> <br>
+          <a href="#">Editar mi perfil</a> </div>
+      </div>
+      <div class="left-nav">
+        <ul class="left-menu">
+          <li class="left-menu1 active"><a href="#"><i></i>Propixia</a></li>
+          <li class="left-menu2 "><a href="#"><i></i> BNS Mexico</a></li>
+          <li class="left-menu3"><a href="#"><i></i> ICCS</a> </li>
+          <li class="left-menu4"><a href="#"><i></i> IOS Offices</a> </li>
+          <li class="left-menu5"><a href="#"><i></i> Claut</a> </li>
+          <li class="left-menu6"><a href="#"><i></i> Webpoint</a> </li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h4>Mi red de contactos</h4>
+        <div>
+          <input type="text" class="textbox" placeholder="Buscar Contactos">
+          <input type="submit" class="" value="Buscar">
+        </div>
+      </div>
+      <div class="frd-box"> <span><img src="images/frd-img1.jpg" alt=""/></span> <span><img src="images/frd-img2.jpg" alt=""/></span> <span><img src="images/frd-img3.jpg" alt=""/></span> <span><img src="images/frd-img4.jpg" alt=""/></span> <span><img src="images/frd-img5.jpg" alt=""/></span> <span><img src="images/frd-img6.jpg" alt=""/></span> <span><img src="images/frd-img7.jpg" alt=""/></span> <span><img src="images/frd-img8.jpg" alt=""/></span> <span><img src="images/frd-img9.jpg" alt=""/></span> </div>
+      <div class="mis-pro">
+        <h4>Mis proyectos</h4>
+        <input type="text" class="textbox" placeholder="Proy">
+        <div class="mis-pro-list"> Proyecto<br>
+          Proyectos <br>
+          Proyeccion <br>
+          Proyectado <br>
+          Proyectar <br>
+        </div>
+        <span class="greensmall">Ver todos mis proyectos</span> </div>
+      <div class="dashbord-box">
+        <h4>Dashboard</h4>
+        <div class="blue-box"> <span class="box-title">
+          <table border="0" width="100%">
+            <tr>
+              <td rowspan="3" style="vertical-align:middle;"><img src="images/left-f-icon.jpg" alt=""/></td>
+            </tr>
+            <tr>
+              <td class="count">431</td>
+            </tr>
+            <tr>
+              <td>Productos</td>
+            </tr>
+          </table>
+          </span> </div>
+        <div class="skyblue-box"> <span class="box-title">
+          <table border="0" width="100%">
+            <tr>
+              <td rowspan="3" style="vertical-align:middle;"><img src="images/left-s-icon.jpg" alt=""/></td>
+            </tr>
+            <tr>
+              <td class="count">697</td>
+            </tr>
+            <tr>
+              <td>Guaranties</td>
+            </tr>
+          </table>
+          </span> </div>
+        <div class="green-box"> <span class="box-title">
+          <table border="0" width="100%">
+            <tr>
+              <td rowspan="3" style="vertical-align:middle;"><img src="images/left-t-i-icon.jpg" alt=""/></td>
+            </tr>
+            <tr>
+              <td class="count">98%</td>
+            </tr>
+            <tr>
+              <td>Ticket Promedio</td>
+            </tr>
+          </table>
+          </span> </div>
+        <div class="red-box"> <span class="box-title">
+          <table border="0" width="100%">
+            <tr>
+              <td rowspan="3" style="vertical-align:middle;"><img src="images/left-m-icon.jpg" alt=""/></td>
+            </tr>
+            <tr>
+              <td class="count">-12%</td>
+            </tr>
+            <tr>
+              <td>Entradas al ano</td>
+            </tr>
+          </table>
+          </span> </div>
+      </div>
+      <div class="chat-box">
+        <h4>Chat Comments</h4>
+        <div class="chat-content">
+          <div class="user1">
+            <div><span class="useimg"><img src="images/user.jpg" alt=""/></span><b>Robert Contreras</b><br>
+              <span class="date">17 July 2013</span></span> </div>
+            <div class="disc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium at ante ac semper. Proin mollis elementum ultricies. Donec molestie metus sed. </div>
+          </div>
+          <div class="user2">
+            <div><span class="useimg"><img src="images/user2.jpg" alt=""/></span><b>Robert Contreras</b><br>
+              <span class="date">17 July 2013</span></span> </div>
+            <div class="disc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium at ante ac semper. Proin mollis elementum ultricies. Donec molestie metus sed. </div>
+          </div>
+          <div class="user1">
+            <div><span class="useimg"><img src="images/user.jpg" alt=""/></span><b>Robert Contreras</b><br>
+              <span class="date">17 July 2013</span></span> </div>
+            <div class="disc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium at ante ac semper. Proin mollis elementum ultricies. Donec molestie metus sed. </div>
+          </div>
+        </div>
+        <div class="write-massge">
+          <input type="text" class="textbox" placeholder="Write your Comment">
+          <input type="submit" class="" value="Comment">
+        </div>
+      </div>
+      <div class="timeline-box">
+        <h4>Timeline</h4>
+        <div class="chat-content">
+          <div class="user1">
+            <div><span class="useimg"><img src="images/user3.jpg" alt=""/></span><b>Robert Contreras</b><br>
+              <span class="date">17 July 2013</span></span> </div>
+            <div class="disc"> <strong>Julia</strong> bought 192 items worth of $530 Dlls. (<span class="bluesmall">order #2303</span>) </div>
+          </div>
+          <div class="user1">
+            <div><span class="useimg"><img src="images/user4.jpg" alt=""/></span><b>Robert Contreras</b><br>
+              <span class="date">17 July 2013</span></span> </div>
+            <div class="disc"> <strong>Julia</strong> bought 192 items worth of $530 Dlls. (<span class="bluesmall">order #2303</span>) </div>
+          </div>
+          <div class="user1">
+            <div><span class="useimg"><img src="images/user.jpg" alt=""/></span><b>Robert Contreras</b><br>
+              <span class="date">17 July 2013</span></span> </div>
+            <div class="disc"> <strong>Julia</strong> bought 192 items worth of $530 Dlls. (<span class="bluesmall">order #2303</span>) </div>
+          </div>
+          <div class="user1">
+            <div><span class="useimg"><img src="images/user.jpg" alt=""/></span><b>Robert Contreras</b><br>
+              <span class="date">17 July 2013</span></span> </div>
+            <div class="disc"> <strong>Julia</strong> bought 192 items worth of $530 Dlls. (<span class="bluesmall">order #2303</span>) </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--  divicion derecha tipo central -->
+    <div class="span9">
+      <div class="row-fluid">
+        <div class="grey-container">
+          <h1>Agregar Necesidad</h1>
+          <div class="first-table">
+            <table width="100%" border="0" align="center">
+              <tr>
+                <td><span>Nombra tu proyecto/Necesidad</span>
+                  <div>
+                    <input type="text">
+                  </div></td>
+                <td><span><strong>Sector </strong><span class="bluesmall"> Giro o sector al que pertenece tu necesidad</span></span>
+                  <div>
+                    <select  class="listing-box2" id="listing-box">
+                      <option>a</option>
+                      <option>b</option>
+                      <option>c</option>
+                      <option>d</option>
+                    </select>
+                  </div></td>
+              </tr>
+              <tr>
+                <td colspan="2"><span>Descripción corta</span>
+                  <div>
+                    <textarea class="full-width"></textarea>
+                  </div></td>
+              </tr>
+              <tr>
+                <td><span>Monto del Proyecto <span class="bluesmall"> Opcional</span></span>
+                  <div>
+                    <input type="text">
+                  </div></td>
+                <td><span>Moneda</span>
+                  <div class="che-box">
+                    <label>
+                      <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0">
+                      MXN</label>
+                    <label>
+                      <input type="checkbox" name="CheckboxGroup1_" value="checkbox" id="CheckboxGroup1_1">
+                      USD</label>
+                  </div>
+                <td></td>
+              </tr>
+              <tr>
+                <td><spa>
+                  Fecha de Inicio <span class="bluesmall"> Opcional</span>
+                  <div>
+                    <input type="datetime" class="calender">
+                  </div></td>
+                <td><span>Fecha de vencimiento  Opcional</span>
+                  <div>
+                    <input type="datetime" class="calender">
+                  </div></td>
+              </tr>
+            </table>
+          </div>
+          <div class="first-table">
+            <h2>Escoge alguna de las opciones</h2>
+            <div align="center">
+              <table width="100%" border="0" align="center">
+                <tr>
+                  <td><input type="button" value="Buscar en mi Red de contactos" class="bluebtn"></td>
+                  <td ><input type="button" value="Ya se quien es mi contacto" class="gryebtn"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="first-table">
+            <h2>Recursos</h2>
+            <table width="100%" border="0" align="center">
+              <tr>
+                <td><input type="text"></td>
+                <td rowspan="2"><textarea></textarea></td>
+              </tr>
+              <tr>
+                <td><select  class="listing-box2" id="listing-box2">
+                    <option>a</option>
+                    <option>b</option>
+                    <option>c</option>
+                    <option>d</option>
+                  </select></td>
+              </tr>
+            </table>
+          </div>
+          <div class="first-table">
+            <table  width="100%" border="0" align="center">
+              <tr>
+                <td><input type="text"></td>
+                <td rowspan="2"><textarea></textarea></td>
+              </tr>
+              <tr>
+                <td><select  class="listing-box2" id="listing-box3">
+                    <option>a</option>
+                    <option>b</option>
+                    <option>c</option>
+                    <option>d</option>
+                  </select></td>
+              </tr>
+              
+                <td><input type="button" value="Buscar en mi Red de contactos" class="bluebtn"></td>
+                <td><input type="button" value="Ya se quien es mi contacto" class="gryebtn"></td>
+            </table>
+          </div>
+          <div class=" overflow">
+            <h1>Resultados</h1>
+            <div id="myAccordion" class="accordion togall">
+              <div class="accordion-group">
+                <div class="accordion-heading"> <a href="#collapseOne" data-parent="#myAccordion" data-toggle="collapse" class="accordion-toggle">Diseño de Marca <span class="bluesmall">(2)</span></a> </div>
+                <div class="accordion-body collapse in" id="collapseOne">
+                  <div class="accordion-inner">
+                    <p>
+                    <table width="100%" border="0">
+                      <tr>
+                        <td ><table width="100%" border="0">
+                            <tr>
+                              <td colspan="2" class="name">Name</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><img src="images/us.jpg" alt=""/></td>
+                              <td><b>Andrea Coronado</b><br>
+                                Gerente de Compras<br>
+                                <span class="fed">Cemex</span> <br>
+                                <img src="images/star.jpg" alt=""/></td>
+                            </tr>
+                          </table></td>
+                        <td><img src="images/arow.jpg" alt=""/></td>
+                        <td><table width="100%" border="0">
+                            <tr>
+                              <td colspan="2" class="name">Name</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><img src="images/us.jpg" alt=""/></td>
+                              <td><b>Andrea Coronado</b><br>
+                                Gerente de Compras<br>
+                                <span class="fed">Cemex</span> <br>
+                                <img src="images/star.jpg" alt=""/></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0">
+                            <tr>
+                              <td colspan="2" class="name">Name</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><img src="images/us.jpg" alt=""/></td>
+                              <td><b>Andrea Coronado</b><br>
+                                Gerente de Compras<br>
+                                <span class="fed">Cemex</span> <br>
+                                <img src="images/star.jpg" alt=""/></td>
+                            </tr>
+                          </table></td>
+                        <td><img src="images/arow.jpg" alt=""/></td>
+                        <td><table width="100%" border="0">
+                            <tr>
+                              <td colspan="2"  class="name">Name</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><img src="images/us.jpg" alt=""/></td>
+                              <td><b>Andrea Coronado</b><br>
+                                Gerente de Compras<br>
+                                <span class="fed">Cemex</span> <br>
+                                <img src="images/star.jpg" alt=""/></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </table>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading"> <a href="#collapseTwo" data-parent="#myAccordion" data-toggle="collapse" class="accordion-toggle">Diseño de Marca <span class="bluesmall">(2)</span></a> </div>
+                <div class="accordion-body collapse " id="collapseTwo">
+                  <div class="accordion-inner">
+                    <p>
+                    <table width="100%" border="0">
+                      <tr>
+                        <td ><table width="100%" border="0">
+                            <tr>
+                              <td colspan="2" class="name">Name</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><img src="images/us.jpg" alt=""/></td>
+                              <td><b>Andrea Coronado</b><br>
+                                Gerente de Compras<br>
+                                <span class="fed">Cemex</span> <br>
+                                <img src="images/star.jpg" alt=""/></td>
+                            </tr>
+                          </table></td>
+                        <td><img src="images/arow.jpg" alt=""/></td>
+                        <td><table width="100%" border="0">
+                            <tr>
+                              <td colspan="2" class="name">Name</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><img src="images/us.jpg" alt=""/></td>
+                              <td><b>Andrea Coronado</b><br>
+                                Gerente de Compras<br>
+                                <span class="fed">Cemex</span> <br>
+                                <img src="images/star.jpg" alt=""/></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr>
+                        <td><table width="100%" border="0">
+                            <tr>
+                              <td colspan="2" class="name">Name</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><img src="images/us.jpg" alt=""/></td>
+                              <td><b>Andrea Coronado</b><br>
+                                Gerente de Compras<br>
+                                <span class="fed">Cemex</span> <br>
+                                <img src="images/star.jpg" alt=""/></td>
+                            </tr>
+                          </table></td>
+                        <td><img src="images/arow.jpg" alt=""/></td>
+                        <td><table width="100%" border="0">
+                            <tr>
+                              <td colspan="2"  class="name">Name</td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top"><img src="images/us.jpg" alt=""/></td>
+                              <td><b>Andrea Coronado</b><br>
+                                Gerente de Compras<br>
+                                <span class="fed">Cemex</span> <br>
+                                <img src="images/star.jpg" alt=""/></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </table>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="first-table">
+            <table width="100%" border="0">
+              <tr>
+                <td><img src="images/webpoint.jpg" alt=""/></td>
+                <td><h2><span class="bluesmall">Tu tienda en línea</span></h2>
+                  Venta de e-commerce en México </td>
+                <td><span class="num">273</span> <br>
+                  <b>Productos</b><br>
+                  En esta Categoría </td>
+              </tr>
+            </table>
+          </div>
+          <div class="dynamic-per-box">
+            <div align="right">Selecciona Periodo de tiempo:<img src="images/color-calenterimg.jpg" alt=""/></div>
+            <table width="100%" border="0">
+              <tr>
+                <td><span class="span3 green-persent">87%</span> <span class="text-left"><b> Ventas Totales</b><br>
+                  141 Ventas</span></td>
+                <td><span class="span3 skyblue-persent">23%</span> <span class="text-left"><b> Ventas Totales</b><br>
+                  141 Ventas</span></td>
+                <td><span class="span3 blue-persent">91%</span> <span class="text-left"><b> Ventas Totales</b><br>
+                  141 Ventas</span></td>
+              </tr>
+              <tr>
+                <td><span class="span3 orenge-persent">9%</span> <span class="text-left"><b> Ventas Totales</b><br>
+                  141 Ventas</span></td>
+                <td><span class="span3 yellow-persent">12%</span> <span class="text-left"><b> Ventas Totales</b><br>
+                  141 Ventas</span></td>
+                <td><span class="span3 darkblue-persent">99%</span> <span class="text-left"><b> Ventas Totales</b><br>
+                  141 Ventas</span></td>
+              </tr>
+            </table>
+          </div>
+          <div class=" table-div">
+            <h2>Pedidos Recientes</h2>
+            <table width="100%" border="0" class="table2 ">
+              <tr>
+                <th><input type="checkbox"></th>
+                <th>ORDER</th>
+                <TH>DATE</TH>
+                <TH> PLACED BY</TH>
+                <TH>PYEMENT STATUS</TH>
+                <TH>TOTAL</TH>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>andosnd</td>
+                <td>fsfs</td>
+                <td>fafa</td>
+                <td><img src="images/paidbtn.jpg" alt=""/></td>
+                <td>fafd</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>andosnd</td>
+                <td>fsfs</td>
+                <td>fafa</td>
+                <td><img src="images/paidbtn.jpg" alt=""/></td>
+                <td>fafd</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>andosnd</td>
+                <td>fsfs</td>
+                <td>fafa</td>
+                <td><img src="images/paidbtn.jpg" alt=""/></td>
+                <td>fafd</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>andosnd</td>
+                <td>fsfs</td>
+                <td>fafa</td>
+                <td><img src="images/paidbtn.jpg" alt=""/></td>
+                <td>fafd</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>andosnd</td>
+                <td>fsfs</td>
+                <td>fafa</td>
+                <td><img src="images/paidbtn.jpg" alt=""/></td>
+                <td>fafd</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>andosnd</td>
+                <td>fsfs</td>
+                <td>fafa</td>
+                <td><img src="images/paidbtn.jpg" alt=""/></td>
+                <td>fafd</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>andosnd</td>
+                <td>fsfs</td>
+                <td>fafa</td>
+                <td><img src="images/paidbtn.jpg" alt=""/></td>
+                <td>fafd</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>andosnd</td>
+                <td>fsfs</td>
+                <td>fafa</td>
+                <td><img src="images/paidbtn.jpg" alt=""/></td>
+                <td>fafd</td>
+              </tr>
+            </table>
+            <br>
+            <table width="100%" border="0" align="center">
+              <tbody>
+                <tr>
+                  <td><input type="button" class="bluebtn" value="Buscar en mi Red de contactos"></td>
+                  <td><input type="button" class="gryebtn" value="Ya se quien es mi contacto"></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="first-table">
+              <div  class=" pagination">
+                <ul>
+                  <li class="active"><a class="prev" href="#"><<</a></li>
+                  <li class="active"><a class="page-link" href="#">1</a></li>
+                  <li><a class="page-link" href="#">2</a></li>
+                  <li><a class="page-link" href="#">3</a></li>
+                  <li><a class="page-link current" href="#">4</a></li>
+                  <li><a class="page-link" href="#">5</a></li>
+                  <li><a class="page-link next" href="#">>></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="carga-una">
+              <h1>Cargar una Imagen</h1>
+              <table width="100%" border="0">
+                <tr>
+                  <td><input type="text" value="" placeholder="C:Escritorio/ImagenesProductos/Imagen001.jpg" class="full-width-input"></td>
+                  <td><input type="submit" value="Buscar" class=""></td>
+                </tr>
+                <tr>
+                  <td><div class="progresbar"><span></span></div></td>
+                  <td>&nbsp;</td>
+                </tr>
+              </table>
+            </div>
+            <div class="imagen">
+              <table width="100%" border="0">
+                <tr>
+                  <td><div class="thumbnail"> <img src="images/smalltum.jpg" alt=""/> </div>
+                    Imagen1.jpg </td>
+                  <td><div class="thumbnail"> <img src="images/smalltum.jpg" alt=""/> </div>
+                    Imagen1.jpg </td>
+                  <td><div class="thumbnail"> <img src="images/smalltum.jpg" alt=""/> </div>
+                    Imagen1.jpg </td>
+                </tr>
+                <tr>
+                  <td><div class="thumbnail"> <img src="images/smalltum.jpg" alt=""/> </div>
+                    Imagen1.jpg </td>
+                  <td><div class="thumbnail"> <img src="images/smalltum.jpg" alt=""/> </div>
+                    Imagen1.jpg </td>
+                  <td><div class="thumbnail"> <img src="images/smalltum.jpg" alt=""/> </div>
+                    Imagen1.jpg </td>
+                </tr>
+              </table>
+              <div>
+                <input type="button" value="Cargar Imagenes" class="greenbtn">
+              </div>
+            </div>
+            <div class=" container-fluid item">
+              <h2>Imagenes Cargadas</h2>
+              <div>
+                <table width="100%" border="0">
+                  <tr>
+                    <td><div class="item">
+                        <div class="thumbnail"><img src="images/pro-1.jpg" alt=""/></div>
+                        <div class="tum-disc"><a href="#"><span></span>fbsbfs</a></div>
+                      </div></td>
+                    <td class="nobor">&nbsp;</td>
+                    <td><div class="item">
+                        <div class="thumbnail"><img src="images/pro-1.jpg" alt=""/></div>
+                        <div class="tum-disc"><a href="#"><span></span>fbsbfs</a></div>
+                      </div></td>
+                    <td  class="nobor">&nbsp;</td>
+                    <td><div class="item">
+                        <div class="thumbnail"><img src="images/pro-1.jpg" alt=""/></div>
+                        <div class="tum-disc"><a href="#"><span></span>fbsbfs</a></div>
+                      </div></td>
+                    <td  class="nobor">&nbsp;</td>
+                    <td><div class="item">
+                        <div class="thumbnail"><img src="images/pro-1.jpg" alt=""/></div>
+                        <div class="tum-disc"><a href="#"><span></span>fbsbfs</a></div>
+                      </div></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--  divicion inferior tipo footer -->
+    <div class="span12" style="margin-left:0px;">
+      <div class="large-img">
+        <h1>Imagenes Destacadas</h1>
+        <div class="container" >
+          <div class="thumbnails "> <a href="#"> <img src="images/larg-img1.jpg" alt=""/> </a>
+            <table width="100%" border="0">
+              <tr>
+                <td><span class="ofgreen let-spece">Lorem Ipsum dolor</span> <br>
+                  Mauris porta, arcu vitae dignissim. </td>
+                <td><b class="ofgreen">$1334</b></td>
+              </tr>
+            </table>
+          </div>
+          <div class="thumbnails "> <a href="#"> <img src="images/larg-img2.jpg" alt=""/> </a>
+            <table width="100%" border="0">
+              <tr>
+                <td><span class="ofgreen let-spece">Lorem Ipsum dolor</span> <br>
+                  Mauris porta, arcu vitae dignissim. </td>
+                <td><b class="ofgreen">$1334</b></td>
+              </tr>
+            </table>
+          </div>
+          <div class="thumbnails "> <a href="#"> <img src="images/larg-img3.jpg" alt=""/> </a>
+            <table width="100%" border="0">
+              <tr>
+                <td><span class="ofgreen let-spece">Lorem Ipsum dolor</span> <br>
+                  Mauris porta, arcu vitae dignissim. </td>
+                <td><b class="ofgreen">$1334</b></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="small-large">
+        <table width="100%" border="0">
+          <tr>
+            <td><div><img src="images/small-lage-img1.jpg" alt=""/></div>
+              <div class="small-larg-img-disc"> <span class="ofgreen let-spece">euismod rhoncus urna </span> <br>
+                Felis quam at elit. <b class="ofgreen">$75</b> </div></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><div><img src="images/small-lage-img2.jpg" alt=""/></div>
+              <div class="small-larg-img-disc"> <span class="ofgreen let-spece">euismod rhoncus urna </span> <br>
+                Felis quam at elit.<b class="ofgreen">$75</b> </div></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><div><img src="images/small-lage-img3.jpg" alt=""/></div>
+              <div class="small-larg-img-disc"> <span class="ofgreen let-spece">euismod rhoncus urna </span> <br>
+                Felis quam at elit. <b class="ofgreen">$75</b> </div></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><div><img src="images/small-lage-img3.jpg" alt=""/></div>
+              <div class="small-larg-img-disc"> <span class="ofgreen let-spece">euismod rhoncus urna </span> <br>
+                Felis quam at elit.<b class="ofgreen">$75</b> </div></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    <!-- Aqui empieza en contenido del Footer  -->
+<div class="modal-footer">
+  <div class="container">
+    <div class="span2" style="margin-left:0px;"> <img src="images/footerlogo.png" alt=""/> </div>
+    <div class="span2">
+      <h2>About</h2>
+      <div> <a href="#">Terminos </a> <a href="#">Condiciones </a> <a href="#">Faqs </a> <a href="#">Links relacionados </a> <a href="#">Account </a> </div>
+    </div>
+    <div class="span2">
+      <h2>settings</h2>
+      <div> <a href="#">Settings </a> <a href="#">Mapa de Sitio </a> <a href="#">Paginator </a> <a href="#">Navigation </a> <a href="#">Buttons </a> </div>
+    </div>
+    <div class="span2">
+      <h2>loadings</h2>
+      <div> <a href="#"> Mapa</a> <a href="#">Carga inicial</a> <a href="#">Chats</a> <a href="#">Timeline </a> </div>
+    </div>
+    <div class="span2  socialblock">
+      <h2>Social media</h2>
+      <div> <a href="#"> <span><img src="images/f-icon.jpg" alt=""/></span> Facebook</a> <a href="#"> <span><img src="images/t-icon.jpg" alt=""/></span> Twitter</a> <a href="#"> <span><img src="images/p-icon.jpg" alt=""/></span> Pinterest</a> <a href="#"> <span><img src="images/in-icon.jpg" alt=""/></span> Linkedin </a> </div>
+    </div>
+  </div>
+</div>
+<div class="modal-footer2"> All rights Reserven for TWOPCT 2013 </div>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+<script>
+$(function() {
+$( "#datepicker" ).datepicker({
+showOn: "button",
+buttonImage: "images/calander_icon.png",
+buttonImageOnly: true
+});
+});
+</script> 
+<script src="js/dropkick.js" type="text/javascript" charset="utf-8"></script> 
+<script type="text/javascript">
+$(function () {
+  $('.listing-box').dropkick();
+  $('.listing-box1').dropkick();
+  $('.listing-box2').dropkick();
+  $('.listing-box3').dropkick();
+  $('.listing-box4').dropkick();
+  $('.listing-box5').dropkick();
+  $('.listing-box6').dropkick();
+  $('.listing-box7').dropkick();
+  $('.listing-box8').dropkick();
+  $('.listing-box9').dropkick();
+});
+</script>
+</body>
+</html>

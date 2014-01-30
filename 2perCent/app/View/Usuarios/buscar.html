@@ -1,0 +1,188 @@
+<style>
+
+#wpt-contenido h3{
+ 
+	text-align: center;
+
+}
+
+</style>
+
+	<div id="wpt-contenido">
+	<h3>Gaxioma</h3>
+	<p>Bienvenido <?php echo $usuario_logged_nombre; ?></p>
+	<p> <?php echo $this->Html->link(__('Perfil'), '/Usuarios/view/'.$usuario_logged_id); ?></p>
+	<?php echo $this->Html->link(__('Salir'), 
+			array( 'controller' => 'Usuarios', 'action' => 'logout'));  ?> <br><br>
+	<?php $urli= 'LuisDuran/' ?>
+	<ul id="menu">
+		<li><?php echo $this->Html->link(__('Ciudades'), '/ciudades');  ?> </li>
+		<li><?php echo $this->Html->link(__('Empresas'), '/Empresas');  ?> </li>
+		<li><?php echo $this->Html->link(__('Estados'), '/Estados');  ?> </li>
+		<li><?php echo $this->Html->link(__('Industrias'), '/Industrias');  ?> </li>
+		<li><?php echo $this->Html->link(__('Mensajes'), '/Mensajes');  ?> </li>
+		<li><?php echo $this->Html->link(__('Monedas'), '/Monedas');  ?> </li>
+		<li><?php echo $this->Html->link(__('Negociaciones'), '/Negociaciones');  ?> </li>
+		<li><?php echo $this->Html->link(__('Paises'), '/Paises');  ?> </li>
+		<li><?php echo $this->Html->link(__('skilles'), '/skilles');  ?> </li>
+		<li><?php echo $this->Html->link(__('Solicitudes'), '/Solicitudes');  ?> </li>
+		<li><?php echo $this->Html->link(__('Usuarios'), '/Usuarios');  ?> </li>
+		<li><?php echo $this->Html->link(__('UsuariosSkilles'), '/UsuariosSkilles');  ?> </li>
+	</ul>
+
+	<div >
+		<div id="perfil">
+		<?php
+
+	        if($BusquedaUsuario != null &&  $BusquedaUsuario != '' ){	
+	        	echo "<h4>Usuarios que coinciden con ese nombre </h4>";
+		        foreach($BusquedaUsuario as $item): ?>
+
+		            <div class="step" >
+		                <div class="jms-content">
+		                 	<p><h3>
+		                 		<?php 
+
+		                 		//echo $item['Usuario']['nombre'].' '.$item['Usuario']['apellido'];
+		                 		echo $this->Html->link(__($item['Usuario']['nombre'].' '.$item['Usuario']['apellido']), array(
+		                 			'controller' => 'Usuarios', 'action' => 'view',$item['Usuario']['id'] )); 
+		                 			  
+		                 		?> 
+		                       	</h3> 
+		                    </p>
+		                </div>
+		            </div>
+		  <?php endforeach; 
+		       		
+		       } else { ?>
+
+		<div id="UsuariosSkill">
+		<?php
+
+	        if($AmigosSkilles != null &&  $AmigosSkilles != '' ){	
+	        	echo "<h4> Amigos que coinciden con tu Busqueda. </h4>";
+		        foreach($AmigosSkilles as $item): ?>
+
+		            <div class="step" >
+		                <div class="jms-content">
+		                 	<p><h3>
+		                 		<?php 
+
+		                 	echo $item['Usuario']['nombre'].' '.$item['Usuario']['apellido'].'<br />'.$item['Skill']['nombre'];
+		                 		/*echo $this->Html->link(__($item['Usuario']['nombre'].' '.$item['Usuario']['apellido']), array(
+		                 			'controller' => 'Usuarios', 'action' => 'view',$item['Usuario']['id'] )); 
+		                 			 */ 
+		                 		?> 
+		                       	</h3> 
+		                    </p>
+		                </div>
+		            </div>
+		  <?php endforeach; 
+		       		
+		       }  ?>
+
+		
+		<div id="amigosde">
+		<?php 
+			/*debug($Skilleses);
+			debug($filtro);
+*/
+		if($Skilleses != null &&  $Skilleses != '' ){	
+	        
+	        	echo "<h4> Busquedas relacionadas </h4>";
+
+
+		   	foreach($Skilleses as $itemU): 
+
+		   	//	echo "<h3>".$itemU['Usuario']['nombre'].'   '.$itemU['Usuario']['apellido']."</h3>";
+
+	        	if($filtro != null &&  $filtro != ''){	
+	        	
+		        	foreach($filtro as $item): ?>
+
+
+		       		 <?php  if($itemU['Usuario']['id'] == $item['Usuarios']['id']) { ?>
+		                 	<p><h3><?php 
+		                 	echo $this->Html->link(__($item['Usuarios1']['nombre'].' '.$item['Usuarios1']['apellido']), array(
+		                 			'controller' => 'Negociaciones', 'action' => 'add',$item['Usuarios1']['id'] ));
+		                 	echo "<br />";
+		          				//echo $item['Usuarios1']['nombre'].' '.$item['Usuarios1']['apellido'].'<br />';
+		          				echo $itemU['Skill']['nombre'];
+		                 	 
+		                 			 
+		                 		?> 
+		                       	</h3> 
+		                    </p>
+
+		           <?php  }  endforeach;   
+
+		        	foreach($filtro as $item): ?>
+
+		    	 <?php  if($itemU['Usuario']['id'] == $item['Usuarios1']['id']) { ?>	
+		                 	<p><h3>
+		                 		<?php
+		                 		echo $this->Html->link(__($item['Usuarios']['nombre'].' '.$item['Usuarios']['apellido']), array(
+		                 			'controller' => 'Negociaciones', 'action' => 'add',$item['Usuarios']['id'] ));
+		                 	echo "<br />"; 
+
+		          				//echo $item['Usuarios']['nombre'].' '.$item['Usuarios']['apellido'].'<br />';
+		          				echo $itemU['Skill']['nombre'];
+
+		                 		?> 
+		                       	</h3> 
+		                    </p>
+
+		           <?php  } endforeach; 
+
+		        } 
+
+		            ?>
+
+		  <?php endforeach; 
+		       		
+		       }   ?>
+
+		       <?php  }?>
+
+		</div> 
+	<!-- 	<div id="perfil">
+		<?php
+	        
+	        if($atributos != "null" && $atributos != '' ){	
+		        foreach($atributos as $item): ?>
+
+		            <div class="step" >
+		                <div class="jms-content">
+		                 	<p><h3><?php echo $this->Html->link(__($item['Usuario']['nombre'].' '.$item['Usuario']['apellido']), array(
+		                 			'controller' => 'Usuarios', 'action' => 'view',$item['Usuario']['id'] )); 
+		                 			?> 
+		                       	</h3> 
+		                    </p>
+		                </div>
+		            </div>
+		  <?php endforeach; 
+		       		
+		        } ?>
+
+
+		</div> -->
+		<div id="Busqueda">
+			 		   <?php echo $this->Session->flash('auth'); ?>
+			 		   <?php echo $this->Form->create('Busqueda'); ?>
+            <fieldset> <?php echo $this->Form->input('Buscar');?>  </fieldset>
+				   	   <?php echo $this->Form->end(__('Buscar')); ?>
+		</div>
+
+		<div id="proyectos">
+		</div>
+	</div>
+
+	<div>
+		<div id="">
+		</div>
+		<div>
+		</div>
+
+
+	</div>
+</div>
